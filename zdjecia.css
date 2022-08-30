@@ -1,0 +1,398 @@
+
+body
+{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #29e99fbd;
+    overflow-x: hidden;
+}
+main{
+    height: 100%;
+
+}
+nav
+{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    margin-inline: 25%;
+    z-index: 3;
+    
+}
+.wrapper
+{
+    display: flex;
+    justify-content:center;
+    width: 50vw;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+ul
+{
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50px;
+    padding: 0;
+    border: 2px solid ;
+    overflow: hidden;
+    box-shadow: 0 0 7px;
+}
+ul li 
+{
+    list-style-type: none;
+    width:10vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 3;
+    position: relative;
+    cursor: pointer;
+    font-size: 2vw;
+
+}
+ol
+{
+    font-size: 30px;
+    font-weight: 100;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+a
+{
+    text-decoration: none;
+    color: aliceblue;
+}
+.active
+{
+    position: relative;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.493);
+    z-index: -1;
+    transition: all .2s;
+    box-sizing: border-box;
+}
+article
+{
+    position: relative;
+    bottom: 1vh;
+    z-index: 2;
+    background-color: rgb(208, 255, 97);
+}
+
+.wave
+{
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    z-index: -10;
+}
+.waveSec
+{
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    z-index: -10;
+    background-color: #2dc5be;
+}
+svg.dupa
+{
+    background-color: rgb(255, 92, 17);
+}
+svg.dupa2
+{
+    position: relative;
+    bottom: 1vh;
+    z-index: -100;
+    background-color: rgb(2, 120, 199);
+
+}
+svg.dupa3
+{
+    position: relative;
+    bottom: 2vh;
+    background-color: rgb(105, 150, 2);
+}
+.text
+{
+    color: aliceblue;
+    font-size: 100px;
+    font-weight: 800;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(#af12f8,#00ffb3);
+    position: relative;
+}
+.text p 
+{
+    padding-top: 5vh;
+    font-weight: 100;
+    font-size: 10px;
+    z-index: 400;
+}
+.text span
+{
+    font-size: 2vw;
+}
+.text2 p 
+{
+    padding-top: 5vh;
+    font-weight: 100;
+    font-size: 30px;
+}
+.text3 p 
+{
+    padding-top: 5vh;
+    font-weight: 100;
+    font-size: 30px;
+}
+.text4 p 
+{
+    padding-top: 5vh;
+    font-weight: 100;
+    font-size: 30px;
+}
+.wave2
+{
+    position: absolute;
+    
+}
+.text2
+{
+    color: rgb(4, 12, 19);
+    font-size: 100px;
+    font-weight: 800;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 100vw;
+    height: 20vh;
+    background-image: linear-gradient(rgb(255, 92, 17) , rgb(247, 226, 38));
+    position: relative;
+    bottom: 1vh;
+}
+.waveThi
+{
+    position: relative;
+    bottom: 1vh;
+}
+.text3
+{
+    color: rgb(4, 12, 19);
+    font-size: 100px;
+    font-weight: 800;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 100vw;
+    height: 40vh;
+    background-image: linear-gradient(rgb(2, 120, 199) , rgb(152, 214, 255));
+    position: relative;
+    bottom: 2vh;
+}
+.text4
+{
+    color: rgb(4, 12, 19);
+    font-size: 100px;
+    font-weight: 800;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 100vw;
+    height: 50vh;
+    background-image: linear-gradient(rgb(105, 150, 2) , rgb(208, 255, 97));
+    position: relative;
+    bottom: 3vh;
+}
+@media (max-width:2300px) {
+    .text p ,.text2 p,.text3 p,.text4 p{
+        font-size: 30px;
+    }
+    .text,.text2,.text3,.text4
+    {
+        font-size: 80px;
+
+    }
+    .text3,.text4
+    {
+        height: 30vh;
+    }
+}
+@media (max-width:1700px) {
+    .text p ,.text2 p,.text3 p,.text4 p{
+        font-size: 25px;
+    }
+}
+@media (max-width:1300px) {
+    .text p ,.text2 p,.text3 p,.text4 p{
+        font-size: 20px;
+    }
+    .text,.text2,.text3,.text4
+    {
+        font-size: 60px;
+        
+    }
+}
+@media (max-width:1000px) {
+    .text p ,.text2 p,.text3 p,.text4 p{
+        font-size: 10px;
+    }
+    .text,.text2,.text3,.text4
+    {
+        font-size: 40px;
+        
+    }
+    .text3
+    {
+        height: 20vh;
+    }
+    .text4{
+        min-height: 10vh;
+        
+    }
+@media (max-width:1000px){
+
+    }
+}
+.galeria {
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 64px;
+    margin-inline: 8vw;
+    border: 2px solid black;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.thumbnail {
+    border: solid 3px rgba(0, 0, 0, 0.479);
+    border-radius: 15px;
+    box-shadow: 0 0 48px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: 20px;
+    height: 15vh;
+    width: 10vw;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.2);
+}
+
+.thumbnail img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.thumbnail img:focus,
+.thumbnail img:focus {
+    border: solid 5px rgb(78, 76, 226);
+}
+
+.popup {
+    align-content: center;
+    animation: fadeIn 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup.fade-out {
+    animation: fadeOut 0.3s both;
+}
+
+.popup__img {
+    max-height: 80%;
+    max-width: 80%;
+    border: 2px solid rgba(255, 255, 255, 0.452);
+    border-radius: 10px;
+}
+
+.popup__close {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 6vw;
+    position: fixed;
+    right: 64px;
+    top: 64px;
+}
+
+.popup__arrow {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 8vw;
+    height: 128px;
+    line-height: 128px;
+    position: absolute;
+    top: 50%;
+    width: 128px
+    ;
+}
+
+.popup__close,
+.popup__arrow {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+
+}
+
+.popup__close:hover,
+.popup__arrow:hover {
+    opacity: 1;
+}
+
+.popup__arrow--left {
+    left: 5%;
+    transform: scale(0.5);
+}
+
+.popup__arrow--right {
+    right: 5%;
+    transform: scale(0.5);
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
